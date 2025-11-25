@@ -184,7 +184,7 @@ variables() {
 # - Initialize error traps after loading
 # ------------------------------------------------------------------------------
 
-source <(curl -fsSL https://raw.githubusercontent.com/rrole/ProxmoxVED_wanderer/wanderer_test/misc/core.func)
+source <(curl -fsSL https://raw.githubusercontent.com/rrole/ProxmoxVED_wanderer/wanderer_test/misc/api.func)
 
 if command -v curl >/dev/null 2>&1; then
   source <(curl -fsSL https://raw.githubusercontent.com/rrole/ProxmoxVED_wanderer/wanderer_test/misc/core.func)
