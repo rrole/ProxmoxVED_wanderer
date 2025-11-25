@@ -83,7 +83,7 @@ trap "kill 0" EXIT
 cd ${SEARCH_DIR} && meilisearch --master-key \$MEILI_MASTER_KEY &
 sleep 1
 cd ${DB_DIR} && ./pocketbase serve --http=\$PB_URL --dir=\$PB_DB_LOCATION &
-cd ${WEB_DIR} && node start &
+cd ${WEB_DIR} && node build &
 
 wait -n
 EOF
